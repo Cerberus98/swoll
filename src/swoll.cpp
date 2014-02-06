@@ -5,11 +5,12 @@
 
 int main(int argc, char ** argv)
 {
-  sf::RenderWindow* window = Scoundrel::init_sfml();
-  window->setFramerateLimit(Scoundrel::FRAMERATE_LIMIT);
-  window->setVerticalSyncEnabled(true);
-  Scoundrel::init_game();
-  Scoundrel::game_loop(window);
-  Scoundrel::deinitialize_game(window);
+  //TODO: Implement these
+  //Scoundrel::set_frame_rate(...)
+  //Scoundrel::set_vsync(...)
+
+  Scoundrel::init_scoundrel("./scoundrel.json");
+  Scoundrel::game_loop();
+  Scoundrel::deinitialize_game();
   return 0;
 }

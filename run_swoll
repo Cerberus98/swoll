@@ -1,0 +1,2 @@
+export DYLD_LIBRARY_PATH=./scoundrel_lib
+./swoll
